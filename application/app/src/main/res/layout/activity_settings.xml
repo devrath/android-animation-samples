@@ -47,7 +47,7 @@
         android:background="?attr/selectableItemBackground"
         android:gravity="center_vertical"
         android:padding="@dimen/defaultMargin"
-        android:text="@string/petSleepStatus"
+        android:text="@string/citySleepStatus"
         android:textStyle="bold" />
 
       <com.airbnb.lottie.LottieAnimationView

@@ -14,7 +14,7 @@
     app:lottie_loop="true"
     app:lottie_rawRes="@raw/loading_elephant" />
 
-  <com.raywenderlich.android.menagerie.ui.login.view.ProgressButton
+  <com.samples.android.cities.ui.login.view.ProgressButton
     android:id="@+id/loginButton"
     android:layout_width="match_parent"
     android:layout_height="@dimen/actionButtonSize"

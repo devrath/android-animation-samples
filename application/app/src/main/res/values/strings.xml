@@ -1,7 +1,7 @@
 <resources>
-  <string name="appName">Menagerie</string>
-  <string name="tabMyPets">My Pets</string>
-  <string name="tabSleepingPets">Sleeping Pets</string>
+  <string name="appName">Cities</string>
+  <string name="tabMyCities">My Cities</string>
+  <string name="tabNight">Night</string>
   <string name="logIn">Log In</string>
   <string name="settingsTitle">Settings</string>
   <string name="putAllPetsToBed">Put all pets to bed</string>
@@ -12,5 +12,5 @@
   <string name="cannotFeedSleepingPetMessage">You can not feed a sleeping pet!</string>
   <string name="transitionPetAvatar">PetAvatar</string>
   <string name="transitionPetSleep">PetSleep</string>
-  <string name="petSleepStatus">Pet Sleep Status</string>
+  <string name="citySleepStatus">City Sleep Status</string>
 </resources>

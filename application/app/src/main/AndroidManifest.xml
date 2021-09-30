@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.raywenderlich.android.menagerie">
+  package="com.samples.android.cities">
 
   <application
-    android:name=".App"
+    android:name="com.samples.android.cities.App"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/appName"
@@ -11,7 +11,7 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.Menagerie">
     <activity
-      android:name=".ui.login.LoginActivity"
+      android:name="com.samples.android.cities.ui.login.LoginActivity"
       android:label="@string/appName"
       android:theme="@style/Theme.Menagerie.NoActionBar">
       <intent-filter>
@@ -20,11 +20,11 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".ui.petDetails.PetDetailsActivity" />
-    <activity android:name=".ui.feedPet.FeedPetActivity" />
-    <activity android:name=".ui.main.MainActivity" />
+    <activity android:name="com.samples.android.cities.ui.petDetails.PetDetailsActivity" />
+    <activity android:name="com.samples.android.cities.ui.feedPet.FeedPetActivity" />
+    <activity android:name="com.samples.android.cities.ui.main.MainActivity" />
     <activity
-      android:name=".ui.settings.SettingsActivity"
+      android:name="com.samples.android.cities.ui.settings.SettingsActivity"
       android:theme="@style/TransparentTheme" />
   </application>
 

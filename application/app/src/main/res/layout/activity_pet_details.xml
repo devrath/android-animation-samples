@@ -81,18 +81,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:background="@android:color/white"
       android:paddingBottom="@dimen/scrollingViewPadding">
 
       <ImageView
         android:id="@+id/petImage"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/petDetailsPetImageHeight"
-        android:layout_marginTop="@dimen/bigMargin"
         android:transitionName="@string/transitionPetAvatar"
+       android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/bug" />
+        tools:src="@drawable/city_two" />
 
       <TextView
         android:id="@+id/petName"
