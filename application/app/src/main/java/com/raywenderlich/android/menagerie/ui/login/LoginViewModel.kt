@@ -1,13 +1,15 @@
 package com.raywenderlich.android.menagerie.ui.login
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.raywenderlich.android.menagerie.preferences.MenageriePreferences
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class LoginViewModel @ViewModelInject constructor(
+@HiltViewModel
+class LoginViewModel @Inject constructor(
   private val menageriePreferences: MenageriePreferences
 ) : ViewModel() {
 

@@ -9,13 +9,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.raywenderlich.android.menagerie.R
 import com.raywenderlich.android.menagerie.databinding.ActivityLoginBinding
 import com.raywenderlich.android.menagerie.ui.main.MainActivity
+import com.raywenderlich.android.menagerie.ui.petDetails.PetDetailsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class LoginActivity : AppCompatActivity(), LoginView {
 
   private val binding by lazy { ActivityLoginBinding.inflate(layoutInflater) }
-  private val loginViewModel by viewModels<LoginViewModel>()
+  private val loginViewModel: LoginViewModel by viewModels()
 
   companion object {
     fun getIntent(context: Context) = Intent(context, LoginActivity::class.java).apply {

@@ -21,6 +21,7 @@ import coil.load
 import com.raywenderlich.android.menagerie.R
 import com.raywenderlich.android.menagerie.data.model.Pet
 import com.raywenderlich.android.menagerie.databinding.ActivityFeedPetBinding
+import com.raywenderlich.android.menagerie.ui.login.LoginViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,7 +36,7 @@ class FeedPetActivity : AppCompatActivity() {
   }
 
   private val binding by lazy { ActivityFeedPetBinding.inflate(layoutInflater) }
-  private val feedPetViewModel by viewModels<FeedPetViewModel>()
+  private val feedPetViewModel: FeedPetViewModel by viewModels()
 
   // animation
   private val cookieFlingAnimationX by lazy {

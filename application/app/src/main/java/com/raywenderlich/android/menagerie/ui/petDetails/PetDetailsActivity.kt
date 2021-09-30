@@ -11,6 +11,7 @@ import com.raywenderlich.android.menagerie.R
 import com.raywenderlich.android.menagerie.data.model.Pet
 import com.raywenderlich.android.menagerie.databinding.ActivityPetDetailsBinding
 import com.raywenderlich.android.menagerie.ui.feedPet.FeedPetActivity
+import com.raywenderlich.android.menagerie.ui.settings.SettingsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.math.abs
 
@@ -28,7 +29,7 @@ class PetDetailsActivity : AppCompatActivity(), PetDetailsView {
     }
   }
 
-  private val viewModel by viewModels<PetDetailsViewModel>()
+  private val viewModel: PetDetailsViewModel by viewModels()
 
   private val binding by lazy { ActivityPetDetailsBinding.inflate(layoutInflater) }
 

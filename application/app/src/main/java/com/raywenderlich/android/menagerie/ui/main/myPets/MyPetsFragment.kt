@@ -19,6 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MyPetsFragment : Fragment(), MyPetsView {
+  private val viewModel: MyPetsViewModel by viewModels()
 
   private var binding: FragmentMyPetsBinding? = null
   private val adapter by lazy { PetAdapter(::showPetDetails, viewModel::onPetSleepClick) }
@@ -28,7 +29,6 @@ class MyPetsFragment : Fragment(), MyPetsView {
       onItemSwiped = adapter::onItemSwiped
     )
   }
-  private val viewModel by viewModels<MyPetsViewModel>()
 
   override fun onCreateView(
     inflater: LayoutInflater,

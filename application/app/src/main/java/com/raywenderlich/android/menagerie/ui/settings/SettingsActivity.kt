@@ -9,16 +9,18 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.animation.addListener
 import androidx.core.view.doOnLayout
+import androidx.fragment.app.viewModels
 import com.raywenderlich.android.menagerie.R
 import com.raywenderlich.android.menagerie.databinding.ActivitySettingsBinding
 import com.raywenderlich.android.menagerie.ui.login.LoginActivity
+import com.raywenderlich.android.menagerie.ui.main.myPets.MyPetsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SettingsActivity : AppCompatActivity(), SettingsView {
 
   private val binding by lazy { ActivitySettingsBinding.inflate(layoutInflater) }
-  private val settingsViewModel by viewModels<SettingsViewModel>()
+  private val settingsViewModel: SettingsViewModel by viewModels()
 
   companion object {
     fun getIntent(context: Context) = Intent(context, SettingsActivity::class.java)

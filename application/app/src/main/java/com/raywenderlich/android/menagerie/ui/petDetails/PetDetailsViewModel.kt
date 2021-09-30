@@ -1,14 +1,16 @@
 package com.raywenderlich.android.menagerie.ui.petDetails
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.raywenderlich.android.menagerie.data.model.Pet
 import com.raywenderlich.android.menagerie.repository.PetRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class PetDetailsViewModel @ViewModelInject constructor(
+@HiltViewModel
+class PetDetailsViewModel @Inject constructor(
   private val repository: PetRepository
 ) : ViewModel() {
 

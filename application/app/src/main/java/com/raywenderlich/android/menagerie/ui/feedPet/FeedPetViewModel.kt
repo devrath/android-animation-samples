@@ -1,12 +1,14 @@
 package com.raywenderlich.android.menagerie.ui.feedPet
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.raywenderlich.android.menagerie.data.model.Pet
 import com.raywenderlich.android.menagerie.repository.PetRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class FeedPetViewModel @ViewModelInject constructor(
+@HiltViewModel
+class FeedPetViewModel @Inject constructor(
   private val repository: PetRepository
 ) : ViewModel() {
 
